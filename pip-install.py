@@ -3,10 +3,14 @@ while True:
 	pipins = "pip install "
 	pipuni = "pip uninstall "
 	what = 'Qual o nome do pacote a ser '
-	print("""
+	print("""######################################
+#            PIP Opçoes              #
+#                    DEV: M1R4I N1KK1#
+######################################
 [ 1 ] Instalar Pacotes
 [ 2 ] Remover Pacotes
 [ 3 ] Lista de Pacotes
+-----------------------------
 [ 0 ] Sair do Progama
 	""")
 	option = int(input('Qual a opção: '))
