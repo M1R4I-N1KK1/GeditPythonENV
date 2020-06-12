@@ -1,16 +1,22 @@
 import os
-def line(msg):
-	print('#' * 30)
 
+def title(name):
+	cont = (34 - len(name)) / 2
+	space = " " * int(cont)
+	line = "#" * int(cont)
+	line2 = '#' * len(name)
+	print(f'#{line}{line2}{line}#')
+	print(f'#{space}{name}{space}#')
+	print(f'#{line}{line2}{line}#')
 
 while True:
 	pipins = "pip install "
 	pipuni = "pip uninstall "
 	what = 'Qual o nome do pacote a ser '
-	line()
-	print('#            PIP Opçoes              #')
-	print('#                    DEV: M1R4I N1KK1#')
-	line()
+	name = 'PIP Modules Instaler'
+	
+	title(name)
+	
 	print("""
 [ 1 ] Instalar Pacotes
 [ 2 ] Remover Pacotes
@@ -18,6 +24,7 @@ while True:
 -----------------------------
 [ 0 ] Sair do Progama
 	""")
+	
 	option = int(input('Qual a opção: '))
 	if option == 1:
 		packeage = input(str(what + 'instalado? '))
