@@ -1,12 +1,17 @@
 import os
+def line(msg):
+	print('#' * 30)
+
+
 while True:
 	pipins = "pip install "
 	pipuni = "pip uninstall "
 	what = 'Qual o nome do pacote a ser '
-	print("""######################################
-#            PIP Opçoes              #
-#                    DEV: M1R4I N1KK1#
-######################################
+	line()
+	print('#            PIP Opçoes              #')
+	print('#                    DEV: M1R4I N1KK1#')
+	line()
+	print("""
 [ 1 ] Instalar Pacotes
 [ 2 ] Remover Pacotes
 [ 3 ] Lista de Pacotes
