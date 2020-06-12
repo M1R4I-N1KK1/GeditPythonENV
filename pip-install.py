@@ -13,9 +13,8 @@ while True:
 	pipins = "pip install "
 	pipuni = "pip uninstall "
 	what = 'Qual o nome do pacote a ser '
-	name = 'PIP Modules Instaler'
 	
-	title(name)
+	title('PIP Modules Instaler')
 	
 	print("""
 [ 1 ] Instalar Pacotes
