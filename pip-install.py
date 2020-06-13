@@ -1,26 +1,35 @@
 import os
 
-def title(name):
-	cont = (34 - len(name)) / 2
-	space = " " * int(cont)
-	line = "#" * int(cont)
-	line2 = '#' * len(name)
-	print(f'#{line}{line2}{line}#')
-	print(f'#{space}{name}{space}#')
-	print(f'#{line}{line2}{line}#')
+class header:
+
+	def __init__(self, name = 'PIP Modules Instaler'):
+		self.cont = (34 - len(name)) / 2
+		self.space = " " * int(self.cont)
+		self.line = "#" * int(self.cont)
+		self.line2 = '#' * len(name)
+		self.name = name
+
+	def title(self):
+		print(f'#{self.space}{self.name}{self.space}#')
+		
+	def base(self):
+		print(f'#{self.line}{self.line2}{self.line}#')
+
 
 while True:
 	pipins = "pip install "
 	pipuni = "pip uninstall "
 	what = 'Qual o nome do pacote a ser '
 	
-	title('PIP Modules Instaler')
+	b = header().base()
+	a = header().title()
+	b = header().base()
 	
 	print("""
 [ 1 ] Instalar Pacotes
 [ 2 ] Remover Pacotes
-[ 3 ] Lista de Pacotes
------------------------------
+[ 3 ] Lista de Pacotes Instalado
+--------------------------------
 [ 0 ] Sair do Progama
 	""")
 	
@@ -40,3 +49,4 @@ while True:
 	elif option == 0:
 		print('Enter para sair')
 		break
+
