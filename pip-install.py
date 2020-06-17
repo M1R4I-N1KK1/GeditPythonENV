@@ -2,7 +2,7 @@ import os
 
 class header:
 
-	def __init__(self, name = 'PIP Modules Instaler'):
+	def __init__(self, name = 'TITLE'):
 		self.cont = (34 - len(name)) / 2
 		self.space = " " * int(self.cont)
 		self.line = "#" * int(self.cont)
@@ -21,10 +21,12 @@ while True:
 	pipuni = "pip uninstall "
 	what = 'Qual o nome do pacote a ser '
 	
-	b = header().base()
-	a = header().title()
-	b = header().base()
-	
+	a = header('PIP Modules')
+
+	a.base()
+	a.title()
+	a.base()
+		
 	print("""
 [ 1 ] Instalar Pacotes
 [ 2 ] Remover Pacotes
