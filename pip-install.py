@@ -30,7 +30,7 @@ while True:
 	print("""
 [ 1 ] Instalar Pacotes
 [ 2 ] Remover Pacotes
-[ 3 ] Lista de Pacotes Instalado
+[ 3 ] Lista de P. Instalado
 --------------------------------
 [ 0 ] Sair do Progama
 	""")
