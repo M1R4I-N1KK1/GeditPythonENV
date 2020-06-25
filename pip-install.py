@@ -31,7 +31,7 @@ while True:
 [ 1 ] Instalar Pacotes
 [ 2 ] Remover Pacotes
 [ 3 ] Lista de P. Instalado
---------------------------------
+-----------------------------------
 [ 0 ] Sair do Progama
 	""")
 	
