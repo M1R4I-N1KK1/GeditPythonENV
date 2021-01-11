@@ -1,4 +1,4 @@
 #!/bin/bash
 echo 'Executando' $GEDIT_CURRENT_DOCUMENT_PATH '...'
-xfce4-terminal -x bash -c "source ~/Python/bin/activate && python '$GEDIT_CURRENT_DOCUMENT_PATH'; read"
+gnome-terminal -x bash -c "source ~/PyProjects/venv/bin/activate && python '$GEDIT_CURRENT_DOCUMENT_PATH'; read"
 
